@@ -8,12 +8,12 @@
 import Foundation
 
 public struct LoginResponseDTO: Codable {
-    public var uid: String? = nil
+    public var uid: UUID? = nil
     public var token: String? = nil
     public var reason: String? = nil
     public let error: Bool
     
-    public init(uid: String? = nil, token: String? = nil, reason: String? = nil, error: Bool) {
+    public init(uid: UUID? = nil, token: String? = nil, reason: String? = nil, error: Bool) {
         self.uid = uid
         self.token = token
         self.reason = reason
